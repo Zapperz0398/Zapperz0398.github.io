@@ -30,3 +30,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// Intersection Observer for animations
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.1 });
+
+// Observe all sections
+document.querySelectorAll('section, footer').forEach(element => {
+    observer.observe(element);
+});
+
+// Immediately show hero section
+document.querySelector('.hero').classList.add('visible');
