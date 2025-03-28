@@ -3,32 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zapperz0398</title>
-    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="profile-info">
-        <img src="profile-pic.png" alt="Your Photo" class="profile-pic">
-        <h2>Zapperz0398</h2>
-        <p>Beginner Software Developer</p>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
+            <p>A passionate developer/designer/creative</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
     </section>
 
-    <section class="about">
-        <h3>About Me</h3>
-        <p>Hi! I'm Zapperz. I'm just your not so ordinary guy who absolutely loves everything to do with computers. I love software development, web technologies, and cyber-security. I enjoy building meaningful pieces of software that will help people in various ways.</p>
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>
+                I'm a creative professional with a passion for building amazing digital experiences. 
+                Whether it's coding, designing, or problem-solving, I love turning ideas into reality.
+            </p>
+            <div class="skills">
+                <span>HTML/CSS</span>
+                <span>JavaScript</span>
+                <span>UI/UX</span>
+            </div>
+        </div>
     </section>
 
-    <section class="contact">
-        <h3>Contact</h3>
-        <p>Email: <a href="mailto:zapperz0398@gmail.com">zapperz0398@gmail.com</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Zapperz0398</p>
+    <footer id="contact">
+        <p>© 2024 My Portfolio. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
