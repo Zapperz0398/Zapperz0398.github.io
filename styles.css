@@ -11,7 +11,7 @@ body {
     background: #ffffff;
 }
 
-/* Navigation */
+/* ===== Navigation ===== */
 nav {
     background: #ffffff;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -35,8 +35,8 @@ nav ul li a {
     text-decoration: none;
     color: inherit;
     font-weight: 600;
-    transition: color 0.3s;
     position: relative;
+    transition: color 0.3s;
 }
 
 nav ul li a::after {
@@ -54,7 +54,7 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
-/* Hero Section */
+/* ===== Hero Section ===== */
 .hero {
     padding: 120px 2rem 2rem;
     min-height: 100vh;
@@ -91,10 +91,32 @@ nav ul li a:hover::after {
 .hero-content h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    overflow: hidden;
+    opacity: 0;
+    animation: fadeIn 2.5s 0.3s forwards;
 }
 
 .highlight {
     color: #b38c45;
+    display: inline-block;
+}
+
+.highlight .letter {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: letterPop 2.4s forwards;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+@keyframes letterPop {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .hero-content p {
@@ -119,7 +141,7 @@ nav ul li a:hover::after {
     box-shadow: 0 5px 15px rgba(0, 119, 182, 0.3);
 }
 
-/* About Section */
+/* ===== About Section ===== */
 .about {
     padding: 5rem 2rem;
     max-width: 800px;
@@ -161,7 +183,7 @@ nav ul li a:hover::after {
     transform: scale(1.05);
 }
 
-/* Footer */
+/* ===== Footer ===== */
 footer {
     text-align: center;
     padding: 2rem;
@@ -190,6 +212,7 @@ footer.visible {
     transform: translateY(-5px);
 }
 
+/* ===== Responsive Design ===== */
 @media (max-width: 768px) {
     .hero-content h1 {
         font-size: 2rem;
