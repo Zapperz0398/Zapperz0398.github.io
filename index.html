@@ -4,31 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zapperz0398</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="profile-info">
-        <img src="profile-pic.png" alt="Your Photo" class="profile-pic">
-        <h2>Zapperz0398</h2>
-        <p>Beginner Software Developer</p>
+    <section id="home" class="hero">
+        <div class="profile-container">
+            <img src="profile-pic.png" alt="Your Name" class="profile-pic">
+        </div>
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Zapperz0398</span></h1>
+            <p>A passionate creative professional</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
     </section>
 
-    <section class="about">
-        <h3>About Me</h3>
-        <p>Hi! I'm Zapperz. I'm just your not so ordinary guy who absolutely loves everything to do with computers. I love software development, web technologies, and cyber-security. I enjoy building meaningful pieces of software that will help people in various ways.</p>
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>
+                Hi! I am Zapperz0398, just your not-so-ordinary guy. I am an in-progress self-taught developer with interests in Python, shell scripting, web development, and cybersecurity. I enjoy building command-line tools, automating repetitive tasks, and exploring the connections between AI and productivity. I am also well-versed in Git, with a beginner's understanding of Docker.<br><br>
+                Outside of coding, I use various shell commands and scripts to perform tasks on my machine. Some of the tools I use include ffmpeg for video processing tasks and rclone for managing cloud storage.<br><br>
+                Beyond coding, I am a dedicated learner, currently pursuing both general academics through school and specialized skills through various other platforms. I have a deep interest in the science of learning—understanding how we learn and how to use that to my advantage. My love for productivity makes me continuously explore and implement strategies that enhance my efficiency.<br><br>
+                I also love gaming, enjoying popular titles such as Terraria and PUBG Mobile. Additionally, I enjoy watching those who play games such as Rust and GTA 5 RP, where immersive storylines and characters are created.<br><br>
+                At my core, I have a highly structured and analytical way of thinking while also striving to be a high achiever—both of which serve as my greatest strength and my biggest challenge.
+            </p>
+            <!-- <div class="skills">
+                <span>Web Design</span>
+                <span>Frontend Dev</span>
+                <span>UI/UX</span>
+            </div> -->
+        </div>
     </section>
 
-    <section class="contact">
-        <h3>Contact</h3>
-        <p>Email: <a href="mailto:zapperz0398@gmail.com">zapperz0398@gmail.com</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Zapperz0398</p>
+    <footer id="contact">
+        <p>© 2025 Portfolio. All rights reserved.<br>
+        Icons by <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>.</p>
+        <div class="social-links">
+            <a href="https://github.com/Zapperz0398" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://stackoverflow.com/users/16986299/zapperz0398" target="_blank"><i class="fab fa-stack-overflow"></i></a>
+            <a href="mailto:zapperz0398@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
