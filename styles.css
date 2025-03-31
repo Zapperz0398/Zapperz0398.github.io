@@ -63,7 +63,7 @@ nav ul li a:hover::after {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: linear-gradient(135deg, #9f3939 0%, #000000 100%);
 }
 
 .profile-container {
