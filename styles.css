@@ -188,7 +188,7 @@ nav ul li a:hover::after {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.02));
     padding: 1.6rem 1.8rem;
     border-radius: 12px;
-     border: 3px solid rgba(212, 175, 55, 0.2);
+    border: 3px solid rgba(212, 175, 55, 0.2);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
 }
 
@@ -272,4 +272,38 @@ footer p {
 /* accessibility: prefers dark (keeps consistent) */
 @media (prefers-color-scheme: dark) {
     /* no change — already dark */
+}
+
+/* Article Pages */
+
+.article {
+    padding: 120px 2rem 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.01), rgba(0, 0, 0, 0.25));
+}
+
+.article h2 {
+    margin-bottom: 2rem;
+    color: #cfcfcf6b;
+}
+
+.article p {
+    font-size: 1.15rem;
+    margin-bottom: 2rem;
+}
+
+.article a {
+    color: var(--accent);
+    transition: transform 0.25s ease, color 0.25s;
+}
+
+.article a:hover {
+    color: var(--accent-strong);
+    transform: translateY(-6px);
+    filter: drop-shadow(0 6px 18px rgba(0, 170, 255, 0.12));
 }
